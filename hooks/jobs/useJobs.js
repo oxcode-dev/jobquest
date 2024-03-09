@@ -6,7 +6,6 @@ import
 export const useJobs = (table='jobs', orderByColumn='created_at', orderDirection = 'desc', limitNm=30) => {
     const { $db } = useNuxtApp()
 
-    const collectionRef = collection($db, table)
     const orderByParam = ref(orderByColumn)
     const limitNumber = ref(limitNm)
     const limitOrder = ref(orderDirection)
@@ -27,6 +26,7 @@ export const useJobs = (table='jobs', orderByColumn='created_at', orderDirection
 
     const getData = async () => {
         try{
+            const collectionRef = collection($db, table)
             const first = query(collectionRef, orderBy(orderByParam.value, limitOrder.value), limit(limitNumber.value));
             const data = await getDocs(first);
             lastItemId.value = data.docs[data.docs.length-1]?.id || null;
@@ -40,6 +40,7 @@ export const useJobs = (table='jobs', orderByColumn='created_at', orderDirection
     const handleNextPage = async(selectedPage) => {
         if(lastItemId.value && selectedPage <= pages.value) {
             try{
+                const collectionRef = collection($db, table)
                 const dataDoc = doc(db, table, lastItemId.value);
                 const result = await getDoc(dataDoc);
 
@@ -61,6 +62,7 @@ export const useJobs = (table='jobs', orderByColumn='created_at', orderDirection
     const handlePrevPage = async(selectedPage) => {
         if(firstItemId.value && selectedPage >= 1) {
             try{
+                const collectionRef = collection($db, table)
                 const dataDoc = doc(db, table, firstItemId.value);
                 const result = await getDoc(dataDoc);
 
