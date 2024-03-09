@@ -19,6 +19,7 @@ export const useJobs = (table='jobs', orderByColumn='created_at', orderDirection
     const pageTitle = computed(() => `<span>Page <b>${currentPage.value}</b> of ${pages.value}</span>`)
 
     const countAllData = async() => {
+        const collectionRef = collection($db, table)
         const snapshot = await getCountFromServer(collectionRef);
         getTotalData.value = snapshot.data().count;
         pages.value = Math.ceil(getTotalData.value/limitNumber.value)
