@@ -25,7 +25,6 @@
 </template>
 
 <script setup>
-import VueFeather from 'vue-feather'
 const inputClass = ref('block w-full h-10 bg-transparent border rounded border-gray-400 my-1 p-2 focus:outline-none')
 const textareaClass = ref('block w-full bg-transparent border rounded border-gray-400 my-1 p-2 focus:outline-none')
 </script>

@@ -1,9 +1,6 @@
 <template>
     <div>
         <form @submit.prevent="handleUpdatePassword">
-            <!-- <h2 class="pb-6 py-4 text-2xl">
-                Change Password
-            </h2> -->
             <div class="py-2 pt-2">
                 <label class="font-semibold text-sm text-gray-600 pb-1 block">Password</label>
                 <input type="password" required v-model="form.password" :class="inputClass" />

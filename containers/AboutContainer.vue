@@ -46,13 +46,13 @@
 
             <div>
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 w-full py-8">
-                    <div v-for="n in 3" :key="n">
+                    <div v-for="(list, key) in aboutList" :key="key">
                         <div class="bg-blue-50 w-full text-gray-500 p-6 shadow relative hover:border hover:border-blue-200">
                             <div class="bg-white w-12 h-12 inline-flex items-center justify-center rounded-lg">
-                                <VueFeather type="flag" class="text-blue-500 w-8 h-8" />
+                                <VueFeather :type="list.icon" class="text-blue-500 w-8 h-8" />
                             </div>
                             <div class="py-3">
-                                <h2>Our Mission</h2>
+                                <h2>{{ list?.title || 'N/A' }}</h2>
                             </div>
                             <div>
                                 <p class="text-sm text-gray-400 font-light">
@@ -71,4 +71,7 @@
 
 <script setup>
 import VueFeather from 'vue-feather'
+import { aboutCores } from '~/constants'
+
+const aboutList = ref(aboutCores ?? [])
 </script>

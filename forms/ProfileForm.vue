@@ -40,8 +40,4 @@ const form = ref({
     portfolio: user.value?.portfolio || null,
     location: user.value?.location || null,
 })
-
-// const handleSubmit = () => {
-//     console.log(form.value)
-// }
 </script>

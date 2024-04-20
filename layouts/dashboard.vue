@@ -85,7 +85,7 @@ import Layout from './default.vue'
 import VueFeather from 'vue-feather'
 import { useFirebaseAuth } from '../composables/useFirebaseAuth'
 import { useProfileForm } from '~/hooks/dashboard/profile';
-import { isEmpty } from '~/helpers';
+import { dashboardNavs } from  '~/constants/dashboard'
 
 const route = useRoute()
 
@@ -93,13 +93,7 @@ const showMenu = ref(false)
 const showModal = ref(false)
 const img_placeholder = ref('https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2220431045.jpg')
 
-const navs = ref([
-    { label: 'Home', link: '', icon: 'home'},
-    { label: 'Applied Jobs', link: 'applied-jobs', icon: 'mouse-pointer'},
-    { label: 'Saved Jobs', link: 'saved-jobs', icon: 'bookmark'},
-    // { label: 'Profile', link: ''},
-    { label: 'Account Management', link: 'account', icon: 'settings'},
-])
+const navs = ref(dashboardNavs ?? [])
 
 const fullPath = computed(() => route.fullPath)
 const getFolderPath = computed(() => fullPath.value.split('/')[2])

@@ -19,9 +19,6 @@ import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 import VueFeather from 'vue-feather'
 
-// import AOS from './../node_modules/aos/dist/aos';
-// AOS.init();
-
 import { onAuthStateChanged } from "firebase/auth";
 import { useAuthStore } from "~/stores/auth";
 import { useJobsStore } from "~/stores/jobs";

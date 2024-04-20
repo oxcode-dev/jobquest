@@ -110,6 +110,7 @@ import { useRoute } from 'nuxt/app';
 import { useAuthStore } from '../stores/auth'
 import { isEmpty } from '~/helpers';
 import { useFirebaseAuth } from '../composables/useFirebaseAuth'
+import { headerNavs } from '~/constants'
 
 const route = useRoute()
 const authStore = useAuthStore()
@@ -120,13 +121,7 @@ const isUserDetailsEmpty = computed(() => isEmpty(user_details.value))
 const fullPath = computed(() => route.fullPath)
 const getFolderPath = computed(() => fullPath.value.split('/')[1])
 const imagePlaceholder = ref('https://png.pngtree.com/png-vector/20210604/ourmid/pngtree-gray-avatar-placeholder-png-image_3416697.jpg')
-const navs = ref([
-    {name: 'Home', link: '/', label: '' },
-    {name: 'Browse Jobs', link: '/jobs', label: 'jobs'},
-    {name: 'About', link: '/about', label: 'about'},
-    {name: 'Blogs', link: '/blogs', label: 'blogs'},
-    {name: 'Contact', link: '/contact', label: 'contact'},
-])
+const navs = ref(headerNavs)
 
 const emit = defineEmits(['toggle'])
 const props = defineProps({
@@ -145,22 +140,5 @@ const signOut = async() => {
 }
 
 const header_div = ref(null)
-
-// onMounted(() => {
-//     window.onscroll = () => {
-//         console.log('scroll')
-//         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-//             // console.log(header_div.value, 1)
-//             header_div.value.classList.add('fixed')
-//             header_div.value.classList.add('w-full')
-//             header_div.value.classList.add('top-0')
-//         } else {
-//             // console.log(header_div.value, 2)
-//             header_div.value.classList.remove('fixed')
-//             header_div.value.classList.remove('w-full')
-//             header_div.value.classList.remove('top-0')
-//         }
-//     }
-// })
 
 </script>

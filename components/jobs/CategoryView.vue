@@ -17,7 +17,6 @@
 </template>
 
 <script setup>
-import VueFeather from 'vue-feather'
 import { o_O } from '~/helpers';
 import { useFirebaseDB } from '~/composables/useFirebaseDB'
 

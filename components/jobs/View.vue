@@ -32,8 +32,6 @@
 </template>
 
 <script setup>
-// import VueFeather from 'vue-feather'
-// import { o_O } from '~/helpers';
 import { useJobs } from '../../hooks/jobs/useJobs';
 
 const { pageTitle, pages, currentPage, handleNextPage, handlePrevPage, allData, isLoading } = useJobs()
