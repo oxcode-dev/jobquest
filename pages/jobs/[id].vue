@@ -241,7 +241,7 @@ const recruiter = ref({})
 const job_summaries = computed(() => [
     { title: 'Publish Date', value: datetime.value },
     { title: 'Vacancy', value: `${job.value?.position_available || 0} ${job.value?.position_available > 1 ? 'Positions' : 'Position' }` },
-    { title: 'Type', value: job.value?.job_type || 'N/A' },
+    // { title: 'Type', value: job.value?.job_type || 'N/A' },
     { title: 'Category', value: job.value.category_id ? category.value.name : 'N/A' },
     { title: 'Salary', value: `${job.value?.min_salary || 0} - ${job.value?.max_salary || 0}/year` },
     { title: 'Location', value: job.value?.location || 'N/A' },
