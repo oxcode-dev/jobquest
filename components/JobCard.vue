@@ -1,6 +1,6 @@
 <template>
     <div class="bg-gray-50 translate-y-0 hover:bg-white border p-4 md:p-8 rounded-lg hover:border-blue-200 hover:-translate-y-1">
-        <div class="flex flex-wrap justify-between items-center">
+        <div class="flex flex-wrap justify-between items-center" :title="job?.title || 'N/A'">
             <div class="w-full">
                 <!-- <div class="h-16 w-16 border mb-3 rounded-lg">Logo</div> -->
                 <div class="w-full">
