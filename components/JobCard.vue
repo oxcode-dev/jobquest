@@ -4,7 +4,7 @@
             <div class="w-full">
                 <!-- <div class="h-16 w-16 border mb-3 rounded-lg">Logo</div> -->
                 <div class="w-full">
-                    <h2 class="text-xl font-semibold text-gray-800">
+                    <h2 class="text-xl font-semibold text-gray-800 line-clamp-1 truncate">
                         <nuxt-link :to="`/jobs/${job?.id || ''}`">
                             {{ job?.title || 'N/A' }}
                         </nuxt-link>
