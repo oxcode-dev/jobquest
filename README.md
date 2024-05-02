@@ -1,75 +1,24 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# JobQuest Job Board
 
-## Setup
+The project is a job board system, where users can search, filter and apply for a job while logged in.
 
-Make sure to install the dependencies:
+This system consist of the following pages:
 
-```bash
-# npm
-npm install
+1. Homepage 
+2. About us page
+3. Store page: This page consist of lists of products, search input for products searching and list of categories to filter the products
+4. Contact us page
+5. Cart page: This page is for checking the products and quantity in the shopping cart and their total. This page leads the Checkout page)
+6. Checkout page: This page is for confirming and checking out of the products in the cart. The shopping's info is being collected for further processing.
+7. Orders Page: The shoppers provide their email address in order to query their orders 
 
-# pnpm
-pnpm install
+Technologies Used 
 
-# yarn
-yarn install
++ Nextjs & Reactjs
++ Redux for state management
++ Tailwind css for styling 
++ Vercel for deployment
++ Firebase (storage, database)
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Check the project on https://barfresh.vercel.app
