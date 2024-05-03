@@ -29,5 +29,5 @@ Technologies Used
 Check the project [Click Here](https://app-jobquest.vercel.app)
 
 Project Screens
-![Alt text]('/assets/img/home-screenshot.png' "Homepage Screen")
-![Alt text]('/assets/img/jobs-screenshot.png' "Jobs Page Screen")
+![Alt text]('assets/img/home-screenshot.png' "Homepage Screen")
+![Alt text]('assets/img/jobs-screenshot.png' "Jobs Page Screen")
