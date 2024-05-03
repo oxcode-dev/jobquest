@@ -12,6 +12,9 @@ This system consist of the following pages:
 5. Login Page (User provide correct email and password for dashboard access and to be able to apply for available opened jobs)
 6. Sign Up Page (Page for User registration)
 7. Blogs and blog detail pages (Dummy Data)
+8. Dashboard Pages
+   ~ Home page - Update user profile
+   ~ Saved Jobs - User can all jobs saved 
 
 Technologies Used 
 
