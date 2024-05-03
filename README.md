@@ -13,8 +13,10 @@ This system consist of the following pages:
 6. Sign Up Page (Page for User registration)
 7. Blogs and blog detail pages (Dummy Data)
 8. Dashboard Pages
-   ~ Home page - Update user profile
-   ~ Saved Jobs - User can all jobs saved 
+   + Home page - Update user profile
+   + Saved Jobs - User can all jobs saved
+   + Applied Jobs - User can all jobs applied
+   + Settings - Page to update email, change password and delete account
 
 Technologies Used 
 
