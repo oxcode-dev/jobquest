@@ -29,6 +29,9 @@ Technologies Used
 Check the project [Click Here](https://app-jobquest.vercel.app)
 
 Project Screens
-![Alt text]('https://github.com/oxcode-dev/jobquest/blob/main/public/assets/img/home-screenshot.png?raw=true' "Homepage Screen")
+![Alt text]('https://app-jobquest.vercel.app/assets/img/home-screenshot.png' "Homepage Screen")
 ![Alt text]('assets/img/jobs-screenshot.png' "Jobs Page Screen")
 
+<img src="https://app-jobquest.vercel.app/assets/img/home-screenshot.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
