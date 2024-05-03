@@ -29,5 +29,6 @@ Technologies Used
 Check the project [Click Here](https://app-jobquest.vercel.app)
 
 Project Screens
-![Alt text](assets/img/home-screenshot.png "Homepage Screen")
+![Alt text]('https://github.com/oxcode-dev/jobquest/blob/main/public/assets/img/home-screenshot.png?raw=true' "Homepage Screen")
 ![Alt text]('assets/img/jobs-screenshot.png' "Jobs Page Screen")
+
