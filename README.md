@@ -28,7 +28,8 @@ Technologies Used
 
 Check the project [Click Here](https://app-jobquest.vercel.app)
 
-Project Screens
+# Project Screens
+
 HomePage
 ![home-screenshot](/assets/home-screenshot.png)
 Jobs
