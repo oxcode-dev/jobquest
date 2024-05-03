@@ -5,7 +5,7 @@ The project is a job board system, where users can search, filter and apply for 
 
 This system consist of the following pages:
 
-1. Homepage 
+1. Homepage
 2. About us page
 3. Browse Jobs page: This page consist of lists of jobs available, search input for searching and list of categories to filter the opened jobs
 4. Contact us page
@@ -18,12 +18,15 @@ This system consist of the following pages:
    + Applied Jobs - User can all jobs applied
    + Settings - Page to update email, change password and delete account
 
-Technologies Used 
+Technologies Used
 
 + Nuxtjs & Vuejs
 + Pinia for state management
-+ Tailwind css for styling 
++ Tailwind css for styling
 + Vercel for deployment
 + Firebase (storage, database, authentication)
 
 Check the project [Click Here](https://app-jobquest.vercel.app)
+
+Project Screens
+![Alt text]('/assets/img/home-bg.webp' "a title")
