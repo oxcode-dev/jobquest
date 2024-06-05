@@ -12,7 +12,6 @@
 </template>
 
 <script setup>
-import VueFeather from 'vue-feather'
 import ProfileForm from '../../forms/ProfileForm.vue'
 
 definePageMeta({

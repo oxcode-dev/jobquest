@@ -23,7 +23,6 @@
 </template>
 
 <script setup>
-import VueFeather from 'vue-feather'
 import DashboardJobCard from '~/components/DashboardJobCard.vue';
 import { useSavedJobs } from '../../hooks/jobs/useSavedJobs'
 

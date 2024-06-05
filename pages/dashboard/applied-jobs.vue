@@ -22,7 +22,6 @@
 </template>
 
 <script setup>
-import VueFeather from 'vue-feather'
 import DashboardJobCard from '~/components/DashboardJobCard.vue';
 import { useAppliedJob } from '../../hooks/jobs/useAppliedJob'
 
