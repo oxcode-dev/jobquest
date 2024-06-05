@@ -1,9 +1,6 @@
 <template>
     <div>
         <form @submit.prevent="updateUserEmail">
-            <!-- <h2 class="pb-6 py-4 text-2xl">
-                Update Email
-            </h2> -->
             <div class="my-1 pt-2 pb-8 space-y-4 text-sm text-gray-500">
                 <p>Are you sure you want to update your email? This process cannot be reversed.</p>
                 <p>Kindly provided your new email address.</p>

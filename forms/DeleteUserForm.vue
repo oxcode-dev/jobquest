@@ -1,9 +1,6 @@
 <template>
     <div>
         <form @submit.prevent="deleteUser">
-            <!-- <h2 class="pb-6 py-4 text-2xl">
-                Delete Account
-            </h2> -->
             <div class="my-1 pt-2 pb-8 space-y-4 text-sm text-gray-500">
                 <p>Are you sure you want to completely delete your account? This process cannot be reversed.</p>
                 <p>Kindly provided your email address to confirm delete.</p>
